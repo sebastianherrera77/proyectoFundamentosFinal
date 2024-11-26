@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/preguntas.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Preguntas Frecuentes sobre el IMC</h1>
+    </header>
+    <section>
+        <h3>Preguntas Frecuentes</h3>
+        <details>
+            <summary>¿Qué es el IMC y cómo se calcula?</summary>
+            <p>
+                El IMC (Índice de Masa Corporal) es una medida utilizada para evaluar si tu peso es saludable en relación con tu altura. 
+                Para calcularlo, divide tu peso en kilogramos (kg) entre el cuadrado de tu altura en metros (m²). 
+                <strong>Ejemplo:</strong> Si pesas 70 kg y mides 1.75 m, tu IMC será: <code>70 ÷ (1.75 × 1.75) = 22.86</code>.
+            </p>
+        </details>
+        <details>
+            <summary>¿Cuál es el rango de IMC saludable?</summary>
+            <p>
+                Un IMC entre <strong>18.5 y 24.9</strong> se considera saludable. Por debajo de 18.5 indica bajo peso, entre 25 y 29.9 es sobrepeso, 
+                y 30 o más señala obesidad. Mantenerse dentro del rango saludable puede prevenir enfermedades relacionadas con el peso.
+            </p>
+        </details>
+        <details>
+            <summary>¿Por qué es importante conocer mi IMC?</summary>
+            <p>
+                El IMC proporciona una referencia inicial para evaluar si tu peso podría influir en tu salud. 
+                Tener un IMC adecuado reduce el riesgo de enfermedades crónicas como la diabetes tipo 2, hipertensión y problemas cardíacos.
+            </p>
+        </details>
+        <details>
+            <summary>¿Qué puedo hacer si mi IMC es alto/bajo?</summary>
+            <p>
+                Si tu IMC es alto, prioriza alimentos frescos, ricos en nutrientes y limita el consumo de azúcar y grasas saturadas. 
+                Si es bajo, consulta a un especialista para planificar una dieta rica en calorías saludables y nutrientes esenciales.
+                ¡Nunca tomes decisiones drásticas sin asesoramiento profesional!
+            </p>
+        </details>
+        <details>
+            <summary>¿Qué hábitos de alimentación ayudan a mantener un IMC saludable?</summary>
+            <p>
+                <ul>
+                    <li>Consume al menos cinco porciones de frutas y verduras al día.</li>
+                    <li>Incluye proteínas magras como pescado, pollo y legumbres.</li>
+                    <li>Bebe suficiente agua (8 vasos diarios como mínimo).</li>
+                    <li>Reduce el consumo de alimentos ultraprocesados y bebidas azucaradas.</li>
+                    <li>Come en porciones moderadas y respeta los horarios de comida.</li>
+                </ul>
+            </p>
+        </details>
+        <details>
+            <summary>¿Es seguro perder peso rápidamente para bajar el IMC?</summary>
+            <p>
+                No, perder peso rápidamente puede llevar a deficiencias nutricionales y problemas de salud. 
+                Lo más recomendable es perder de <strong>0.5 a 1 kg por semana</strong> con una combinación de dieta equilibrada y ejercicio regular.
+            </p>
+        </details>
+    </section>
+<a href="/" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #A2D2DF; color: black; text-decoration: none; border-radius: 5px; left: 50%; transform: translateX(220%); ">Regresar a la página principal</a>
+
+    <footer class="footer-preguntas">
+        <p>"Para mayor información consulta con un especialista."</p>
+    </footer>
+</body>
+</html>

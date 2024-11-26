@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obesidad</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/icono-imc.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/casos.css') }}">
+</head>
+<body>
+    <header class="contenedor contenedor--obesidad">
+        <div class="contendedor__caja">
+            <h1 class="caja__nombre">Hola {{ nombre }}!</h1>
+            <p class="caja__IMC">Tu IMC es: {{ imc }}</p>
+            <p class="caja_categoria">Estás en la categoría de <strong>OBESIDAD 😔</strong></p>
+        </div>
+        <div class="contenedor__imagen">
+            <img src="static/images/obesidad.jpg" alt="Imagen obesidad" width="300px">
+        </div>
+    </header>
+
+    <section>
+        <p>El cálculo muestra que te encuentras en la categoría de obesidad, lo que significa que tu peso podría estar afectando tu salud. Pero no te preocupes, queremos ayudarte con algunas recomendaciones prácticas y sostenibles para mejorar tu calidad de vida y alcanzar un peso más saludable.</p>
+    </section>
+
+    <!-- Recomendaciones -->
+    <section>
+        <h2 class="sub__obesidad">Consejos para una vida más saludable</h2>
+
+        <h3>PLANIFICACIÓN DE LAS COMIDAS</h3>
+        <p>Una alimentación equilibrada es clave para lograr un peso saludable. Aquí tienes algunas recomendaciones:</p>
+        <ul>
+            <li><strong class="listas_obesidad">Porciones controladas:</strong> Usa platos más pequeños para evitar comer en exceso.</li>
+            <li><strong class="listas_obesidad">Verduras en cada comida:</strong> Llena al menos la mitad de tu plato con vegetales variados.</li>
+            <li><strong class="listas_obesidad">Evita alimentos ultraprocesados:</strong> Reduce el consumo de comida rápida, snacks y bebidas azucaradas.</li>
+        </ul>
+
+        <h3>HÁBITOS DE HIDRATACIÓN</h3>
+        <p>Beber suficiente agua es fundamental para el control de peso y la salud en general:</p>
+        <ul>
+            <li><strong class="listas_obesidad">Elige agua sobre otras bebidas:</strong> Evita refrescos y jugos con azúcar añadida.</li>
+            <li><strong class="listas_obesidad">Bebe antes de las comidas:</strong> Esto puede ayudarte a controlar el apetito y comer menos.</li>
+        </ul>
+
+        <h3>ACTIVIDAD FÍSICA</h3>
+        <p>El ejercicio regular es un pilar fundamental para un estilo de vida saludable. Comienza poco a poco con actividades accesibles, como:</p>
+        <ul>
+            <li><strong class="listas_obesidad">Caminatas diarias:</strong> Empieza con 20-30 minutos al día y aumenta gradualmente.</li>
+            <li><strong class="listas_obesidad">Ejercicios de bajo impacto:</strong> Natación, yoga o ciclismo estacionario para evitar sobrecargar las articulaciones.</li>
+        </ul>
+        <p>Consulta con un especialista antes de iniciar una rutina para asegurarte de que sea adecuada para ti.</p>
+
+        <h3>APOYO EMOCIONAL Y BIENESTAR</h3>
+        <p>La obesidad a menudo está relacionada con factores emocionales y psicológicos. Algunos consejos incluyen:</p>
+        <ul>
+            <li><strong class="listas_obesidad">Identifica tus desencadenantes:</strong> Reconoce si comes por ansiedad o aburrimiento, y busca alternativas saludables como pasear o hablar con un amigo.</li>
+            <li><strong class="listas_obesidad">Pide apoyo:</strong> Habla con familiares, amigos o un terapeuta para mantener la motivación.</li>
+            <li><strong class="listas_obesidad">Practica técnicas de relajación:</strong> Como meditación o respiración profunda, para manejar el estrés.</li>
+        </ul>
+    </section>
+<a href="/" style="display: inline-block; margin-bottom: 20px; margin-top: 10px; padding: 10px 20px; background-color: #FA812F; color: white; text-decoration: none; border-radius: 5px; left: 50%; transform: translateX(250%); ">Regresar a la página principal</a>
+
+    <footer class="footer--obesidad">
+        <p><strong>¡Recuerda!</strong> Consulta con un médico o nutricionista para obtener un plan personalizado y seguro. Cada paso cuenta para mejorar tu salud.</p>
+    </footer>
+</body>
+
+</html>

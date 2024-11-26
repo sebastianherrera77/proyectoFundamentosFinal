@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bajo Peso</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/icono-imc.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/casos.css') }}">
+</head>
+<body>
+    <header class="contenedor contenedor--bajo_peso">
+        <div class="contendedor__caja">
+            <h1 class="caja__nombre">Hola {{ nombre }}!</h1>
+            <p class="caja__IMC">Tu IMC es: {{ imc }}</p>
+            <p class="caja_categoria">Estás en la categoría de <strong>BAJO PESO 😟</strong></p>
+        </div>
+        <div class="contenedor__imagen">
+            <img src="static/images/bajo_peso.png" alt="Imagen bajo peso" width="300px">
+        </div>
+    </header>
+
+    <section>
+        <p>¿Te alimentas bien?... El cálculo muestra que te encuentras en una escala de bajo peso, esto puede ser producto de una pérdida considerable de apetito impulsada por varios aspectos... pero NO TE PREOCUPES!, planeamos ayudarte con una serie de consejos 😊</p>
+    </section>
+
+    <!-- Recomendaciones -->
+    <section>
+        <h2 class="sub__bajo_peso">Recomendaciones para aumentar de peso de forma saludable</h2>
+
+        <h3>LICUADOS Y BATIDOS</h3>
+        <p>El consumo de batidos nutritivos es una excelente manera de aumentar tu ingesta calórica de forma saludable. Aquí tienes algunas ideas:</p>
+        <ul>
+            <li><strong class="listas_bajo_peso">Plátano, aguacate y leche de almendras:</strong> Un batido cremoso lleno de grasas saludables.</li>
+            <li><strong class="listas_bajo_peso">Frambuesas, yogur griego, espinacas y leche de avena:</strong> Ideal para un batido antioxidante y lleno de nutrientes.</li>
+            <li><strong class="listas_bajo_peso">Leche de vaca, avena, miel y cacao:</strong> Un batido energizante y delicioso para el día a día.</li>
+        </ul>
+        <p>Evita los refrescos y bebidas azucaradas, ya que aportan calorías vacías sin ningún valor nutricional.</p>
+
+        <h3>ALIMENTOS RICOS EN NUTRIENTES</h3>
+        <p>Para ganar peso de forma saludable, es importante incluir alimentos ricos en calorías y nutrientes. Algunas opciones son:</p>
+        <ul>
+            <li><strong class="listas_bajo_peso">Proteínas magras:</strong> Carnes como pollo, pescado, huevos y tofu. La proteína es esencial para la ganancia muscular.</li>
+            <li><strong class="listas_bajo_peso">Grasas saludables:</strong> Aguacates, frutos secos, aceite de oliva y pescado graso como el salmón, ricos en ácidos grasos esenciales.</li>
+            <li><strong class="listas_bajo_peso">Carbohidratos complejos:</strong> Arroz integral, avena, pasta de trigo integral y patatas, fuentes de energía de liberación lenta.</li>
+        </ul>
+
+        <h3>CONTROL DE LOS LÍQUIDOS</h3>
+        <p>Es importante evitar beber grandes cantidades de líquidos antes de las comidas, ya que esto puede reducir tu apetito. En lugar de agua o refrescos, considera estas opciones:</p>
+        <ul>
+            <li><strong class="listas_bajo_peso">Jugos naturales:</strong> Preparados en casa, sin azúcares añadidos.</li>
+            <li><strong class="listas_bajo_peso">Agua de coco:</strong> Hidratante y rica en electrolitos, excelente opción para mejorar la digestión.</li>
+        </ul>
+
+        <h3>ACTIVIDAD FÍSICA MODERADA</h3>
+        <p>El ejercicio de resistencia es clave para aumentar masa muscular. Te recomendamos:</p>
+        <ul>
+            <li>Sentadillas y estocadas con pesas para fortalecer piernas y glúteos.</li>
+            <li>Flexiones y ejercicios con bandas de resistencia para tonificar el torso.</li>
+        </ul>
+
+        <h3>ASPECTOS PSICOLÓGICOS Y BIENESTAR</h3>
+        <p>El bienestar emocional también es fundamental en tu proceso de ganar peso. Si experimentas pérdida de apetito, el estrés podría ser una causa. Considera practicar técnicas de relajación como meditación o yoga para mejorar tu relación con la comida.</p>
+    </section>
+<a href="/" style="display: inline-block; margin-bottom: 20px; margin-top: 10px; padding: 10px 20px; background-color: #133E87; color: white; text-decoration: none; border-radius: 5px; left: 50%; transform: translateX(250%); ">Regresar a la página principal</a>
+    <footer class="footer--bajo_peso">
+        <p><strong>¡Recuerda!</strong> No dudes en consultar con un especialista para recibir asesoría personalizada y guiarte de manera segura en tu proceso.</p>
+    </footer>
+</body>
+</html>
+

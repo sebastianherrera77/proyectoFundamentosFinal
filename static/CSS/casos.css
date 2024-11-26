@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.contenedor {
+    background-color: #ccd3ca;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenedor--sobrepeso {
+    background-color: #bb8fce;
+}
+
+.contenedor--obesidad {
+    background-color: #dc7633;
+}
+
+.contenedor--peso_normal {
+    background-color: #138d75;
+}
+
+.contenedor--bajo_peso {
+    background-color: #2980b9;
+}
+
+.caja__IMC {
+    font-size: 25px;
+}
+
+.caja__categoria {
+    font-size: 25px;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0003;
+}
+
+
+/* Títulos de las recomendaciones */
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub__sobrepeso {
+    color: #bb8fce;
+}
+
+.sub__obesidad {
+    color: #dc7633;
+}
+
+.sub__peso_normal {
+    color: #138d75;
+}
+
+.sub__bajo_peso {
+    color: #2980b9;
+}
+
+h3 {
+    color: #566573;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Listas de recomendaciones */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.listas_sobrepeso {
+    color: #bb8fce;
+}
+
+.listas_obesidad {
+    color: #dc7633;
+}
+
+.listas_peso_normal {
+    color: #138d75;
+}
+
+.listas_bajo_peso {
+    color: #2980b9;
+}
+
+/* Párrafos */
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.footer--sobrepeso {
+    border-top: 5px solid #9b59b6;
+    background-color: #bb8fce;
+}
+
+.footer--obesidad {
+    border-top: 5px solid #d35400;
+    background-color: #dc7633;
+}
+
+.footer--peso_normal {
+    border-top: 5px solid #45b39d;
+    background-color: #138d75;
+}
+
+.footer--bajo_peso {
+    border-top: 5px solid #3498db;
+    background-color: #2980b9;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}

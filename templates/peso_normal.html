@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Peso Normal</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/icono-imc.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/casos.css') }}">
+</head>
+<body>
+    <header class="contenedor contenedor--peso_normal">
+        <div class="contendedor__caja">
+            <h1 class="caja__nombre">Hola {{ nombre }}!</h1>
+            <p class="caja__IMC">Tu IMC es: {{ imc }}</p>
+            <p class="caja_categoria">¡Estás en la categoría de <strong>PESO NORMAL! 😊</strong></p>
+        </div>
+        <div class="contenedor__imagen">
+            <img src="static/images/peso_normal.jpg" alt="Imagen peso normal" width="300px">
+        </div>
+    </header>
+
+    <section>
+        <p>¡Felicidades! Según el cálculo, te encuentras en la categoría de peso normal, lo cual indica que estás en un rango saludable. Esto no solo es bueno para tu bienestar físico, sino también para tu salud general. A continuación, te daremos algunas recomendaciones para mantener este equilibrio y seguir cuidando tu cuerpo.</p>
+    </section>
+
+    <!-- Recomendaciones -->
+    <section>
+        <h2 class="sub__peso_normal">Consejos para mantener un peso saludable</h2>
+
+        <h3>DIETA BALANCEADA</h3>
+        <p>Es importante seguir consumiendo una dieta equilibrada que incluya una variedad de alimentos ricos en nutrientes. Aquí tienes algunos consejos:</p>
+        <ul>
+            <li><strong class="listas_peso_normal">Frutas y verduras:</strong> Asegúrate de llenar la mitad de tu plato con alimentos de origen vegetal.</li>
+            <li><strong class="listas_peso_normal">Proteínas magras:</strong> Pollo, pescado, huevos y opciones vegetales como legumbres y tofu.</li>
+            <li><strong class="listas_peso_normal">Grasas saludables:</strong> Aceite de oliva, aguacates y frutos secos en cantidades moderadas.</li>
+        </ul>
+        <p>Evita los alimentos ultraprocesados y ricos en azúcares, ya que pueden desbalancear tu ingesta calórica y afectar tu energía.</p>
+
+        <h3>HIDRATACIÓN</h3>
+        <p>El agua es esencial para el buen funcionamiento de tu cuerpo. Aquí tienes algunas sugerencias:</p>
+        <ul>
+            <li><strong class="listas_peso_normal">Consume al menos 8 vasos de agua al día:</strong> Mantente hidratado para mejorar tu metabolismo.</li>
+            <li><strong class="listas_peso_normal">Evita las bebidas azucaradas:</strong> Opta por infusiones o jugos naturales.</li>
+        </ul>
+
+        <h3>ACTIVIDAD FÍSICA</h3>
+        <p>El ejercicio regular te ayuda a mantener un peso estable y fortalece tu cuerpo. Algunas actividades recomendadas son:</p>
+        <ul>
+            <li><strong class="listas_peso_normal">Cardio moderado:</strong> Como caminar, correr o andar en bicicleta.</li>
+            <li><strong class="listas_peso_normal">Entrenamiento de fuerza:</strong> Pesas ligeras o ejercicios de peso corporal como planchas y abdominales.</li>
+        </ul>
+        <p>Elige una rutina que disfrutes para mantener la consistencia en el tiempo.</p>
+
+        <h3>ESTILO DE VIDA SALUDABLE</h3>
+        <p>El bienestar general incluye más que solo alimentación y ejercicio. Algunas estrategias clave son:</p>
+        <ul>
+            <li><strong class="listas_peso_normal">Horas de sueño:</strong> Duerme entre 7 y 9 horas por noche para permitir que tu cuerpo se recupere.</li>
+            <li><strong class="listas_peso_normal">Manejo del estrés:</strong> Practica actividades como yoga, meditación o hobbies que disfrutes.</li>
+            <li><strong class="listas_peso_normal">Socializa:</strong> Mantén conexiones con tus amigos y familiares para mejorar tu bienestar emocional.</li>
+        </ul>
+    </section>
+<a href="/" style="display: inline-block; margin-bottom: 20px; margin-top: 10px; padding: 10px 20px; background-color: #15B392; color: white; text-decoration: none; border-radius: 5px; left: 50%; transform: translateX(250%); ">Regresar a la página principal</a>
+
+    <footer class="footer--peso_normal">
+        <p><strong>¡Sigue así!</strong> Mantener un peso saludable es un proceso continuo. No dudes en consultar a un especialista si tienes preguntas o necesitas orientación adicional.</p>
+    </footer>
+</body>
+</html>

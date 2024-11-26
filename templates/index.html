@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <title>IMC y bienestar</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/icono-imc.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/styles.css') }}">
+</head>
+<body>        
+    <header class="encabezado">
+        <h1 class="encabezado__title">IMC Y BIENESTAR</h1>
+        <nav class="encabezado__nav">
+            <ul class="encabezado__list">
+                <li class="encabezado__item"><a href="#" class="encabezado__link">INICIO</a></li>
+                <li class="encabezado__item"><a href="#calculadora" class="encabezado__link">CALCULADORA IMC</a></li>
+                <li class="encabezado__item"><a href="#consejos" class="encabezado__link">CONSEJOS SALUDABLES</a></li>
+                <li class="encabezado__item"><a href="/preguntas" class="encabezado__link">PREGUNTAS</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="inicio">
+        <div>
+            <h2 class="informacion__subtitulo">Toda tu salud en un solo lugar...</h2>
+            <p class="informacion__text">
+                Calcula tu IMC, descubre si estás en un rango saludable y recibe recomendaciones sobre tu nutrición.
+            </p>
+            <button class="informacion__boton">
+                <a href="#calculadora" class="informacion__link">Comenzar</a>
+            </button>
+        </div>
+    </section>
+
+    <section id="calculadora">
+    <!--label: etiqueta un elemento, son elementos en linea por lo cual no se les puede modificar el margin tan facil-->
+        <h2 class="titulo-imc">Calcula tu IMC</h2>
+        <div class="calculadora">
+            <form action="/calcular_imc" method="POST">
+                <div class="input-form">
+                    <label for="nombre">¿Cual es tú nombre?</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="input-form">
+                    <label for="altura">Ingrese su altura (en cm):</label>
+                    <input type="number" placeholder="cm" id="altura" name="altura">
+                </div>
+                <div class="input-form">
+                    <label for="peso">Ingrese su peso:</label>
+                    <input type="number" placeholder="Kg" id="peso" name="peso">
+                </div>
+                <div class="input-form">
+                    <label>¿Desea recibir consejos?</label>
+                    <select name="yes-no">
+                        <option value="Si">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="boton">
+                    <button class="boton2" type="submit">Calcular</button>
+                </div>
+            </form>
+            <!--Intervalos-->
+            <div class="intervalos">
+                <div class="intervalos__box box--bajopeso">
+                    <p class="intervalos__info">Menos de 18.5: Bajo Peso</p>
+                </div>
+                <div class="intervalos__box box--pesonormal">
+                    <p class="intervalos__info">18.5 - 24.9: Peso Normal</p>
+                </div>
+                <div class="intervalos__box box--sobrepeso">
+                    <p class="intervalos__info">25 - 29.9: Sobrepeso</p>
+                </div>
+                <div class="intervalos__box box--obesidad">
+                    <p class="intervalos__info">30 o más: Obesidad</p>
+                </div>
+            <!--<div>
+                <img src="../images/BMI.png" class="grafico">
+            </div>     -->  
+            </div>
+        </div>
+    </section>
+
+    <section id="consejos" class="titulo">
+        <h2>Mejora tu estilo de vida</h2>
+    </section>
+    <div class="card hidratacion">
+        <h3 class="subtitulo">Hidratación</h3>
+        <img class="image" src= "{{ url_for('static', filename='images/consejos_agua.jpg') }}">
+        <p class="texto">La hidratación es fundamental para el correcto funcionamiento de tu cuerpo. Mantenerte bien hidratado mejora tu energía, favorece la digestión y ayuda a eliminar toxinas. Descubre cuánta agua necesita tu cuerpo según tus actividades diarias e incorpora una hidratación adecuada en tu rutina.</p>
+    </div>
+    <div class="card ejercicio">
+        <h3 class="subtitulo">Ejercicio</h3>
+        <img class="image" src="static/images/ejercicio.jpg">
+        <p class="texto">El ejercicio no solo fortalece tu cuerpo, sino que también mejora tu estado de ánimo y reduce el estrés. Incorporar actividad física en tu rutina diaria te ayudará a prevenir enfermedades, aumentar tu energía y mantener un peso saludable. Descubre formas sencillas de mantenerte activo cada día.</p>
+    </div>
+    <div class="card sueño">
+        <h3 class="subtitulo">Sueño</h3>
+        <img class="image" src="{{ url_for('static', filename= 'images/sueño.jpg') }}">
+        <p class="texto">Un buen descanso es esencial para revitalizar tu cuerpo y mente. Dormir lo suficiente mejora tu concentración, fortalece tu sistema inmunológico y equilibra tus emociones. Aprende estrategias efectivas para mejorar la calidad de tu sueño y despertar cada día con energía renovada.</p>
+    </div>
+
+    <div class="contenedor-boton">
+        <button class="informacion__boton color__boton">
+            <a href="{{ url_for('registro_agua') }}" class="informacion__link color__boton" >Registro de agua</a>
+        </button>
+    </div>
+
+    <footer>"El bienestar comienza con el conocimiento y continúa con la acción."</footer>
+</body>
+</html>

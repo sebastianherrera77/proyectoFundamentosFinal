@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobrepeso</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/icono-imc.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/casos.css') }}">
+</head>
+<body>
+    <header class="contenedor contenedor--sobrepeso">
+        <div class="contendedor__caja">
+            <h1 class="caja__nombre">Hola {{ nombre }}!</h1>
+            <p class="caja__IMC">Tu IMC es: {{ imc }}</p>
+            <p class="caja_categoria">Estás en la categoría de <strong>SOBREPESO 🤔</strong></p>
+        </div>
+        <div class="contenedor__imagen">
+            <img src="static/images/sobrepeso.jpg" alt="Imagen sobrepeso">
+        </div>
+    </header>
+
+    <section>
+        <p>El cálculo muestra que te encuentras en la categoría de sobrepeso. Aunque esto no significa que estés en riesgo inmediato, es importante tomar medidas para evitar complicaciones a largo plazo. Aquí tienes algunos consejos prácticos para mejorar tu bienestar.</p>
+    </section>
+
+    <!-- Recomendaciones -->
+    <section>
+        <h2 class="sub__sobrepeso">Recomendaciones para alcanzar un peso saludable</h2>
+
+        <h3>HÁBITOS ALIMENTICIOS</h3>
+        <p>Hacer pequeños cambios en tus elecciones diarias puede marcar una gran diferencia a largo plazo:</p>
+        <ul>
+            <li><strong class="listas_sobrepeso">Evita las calorías vacías:</strong> Reduce el consumo de snacks procesados, dulces y refrescos.</li>
+            <li><strong class="listas_sobrepeso">Aumenta las frutas y verduras:</strong> Integra alimentos frescos en cada comida, ideales para llenarte con pocas calorías.</li>
+            <li><strong class="listas_sobrepeso">Modera las porciones:</strong> Aprende a identificar porciones saludables y evita repetir platos.</li>
+        </ul>
+
+        <h3>HÁBITOS DE BEBIDA</h3>
+        <p>Lo que bebes también influye en tu salud:</p>
+        <ul>
+            <li><strong class="listas_sobrepeso">Prioriza el agua:</strong> Consume al menos 8 vasos de agua al día.</li>
+            <li><strong class="listas_sobrepeso">Infusiones:</strong> Té verde o té de hierbas sin azúcar pueden ser excelentes alternativas para evitar bebidas calóricas.</li>
+        </ul>
+
+        <h3>ACTIVIDAD FÍSICA</h3>
+        <p>Incorporar ejercicio en tu rutina diaria no solo ayuda a controlar el peso, sino también a mejorar tu energía y bienestar general:</p>
+        <ul>
+            <li><strong class="listas_sobrepeso">Camina más:</strong> Realiza paseos diarios de 30 minutos o más. Usa escaleras en lugar de ascensores.</li>
+            <li><strong class="listas_sobrepeso">Prueba ejercicios aeróbicos:</strong> Bicicleta, clases de baile o natación son actividades divertidas y efectivas.</li>
+            <li><strong class="listas_sobrepeso">Fortalece tus músculos:</strong> Realiza ejercicios de resistencia ligera como sentadillas o flexiones para tonificar.</li>
+        </ul>
+
+        <h3>DESCANSO Y BIENESTAR EMOCIONAL</h3>
+        <p>El descanso y la salud emocional son aspectos importantes en el control del peso:</p>
+        <ul>
+            <li><strong class="listas_sobrepeso">Duerme bien:</strong> Intenta dormir de 7 a 9 horas por noche para mantener tu metabolismo en equilibrio.</li>
+            <li><strong class="listas_sobrepeso">Reduce el estrés:</strong> Actividades como yoga, meditación o lectura pueden ayudarte a evitar la "alimentación emocional".</li>
+        </ul>
+    </section>
+<a href="/" style="display: inline-block; margin-bottom: 20px; margin-top: 10px; padding: 10px 20px; background-color: #433878; color: white; text-decoration: none; border-radius: 5px; left: 50%; transform: translateX(250%); ">Regresar a la página principal</a>
+
+    <footer class="footer--sobrepeso">
+        <p><strong>¡Recuerda!</strong> Consultar con un especialista en nutrición o un médico te ayudará a personalizar estas recomendaciones y a monitorear tu progreso.</p>
+    </footer>
+</body>
+
+</html>

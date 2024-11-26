@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="{{ url_for('static', filename='images/icono-imc.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/registro.css') }}">
+    <title>Registro de agua</title>
+</head>
+<body>
+    <section class="hidratacion">
+        <h2 class="hidratacion__sub">La importancia de la hidratación en tu día a día</h2>
+        <div class="hidratacion__secc">
+            <h3 class="secc__sub">¿Cuantos vasos de agua deberíamos tomar al día?</h3>
+            <p class="secc__info info__1">En general, se recomienda beber de 6 a 8 vasos de agua al día (unos 2 litros). Sin embargo, esta cantidad puede variar según tu edad, peso, nivel de actividad física y el clima donde vives. Si haces ejercicio o estás en un lugar cálido, necesitarás más agua para mantenerte hidratado y compensar la pérdida de líquidos. Escucha a tu cuerpo, bebe cuando tengas sed y haz del agua una parte esencial de tu día para sentirte lleno de energía y bienestar.</p>
+        </div>
+        <div class="hidratacion__secc secc__2">
+            <h3 class="secc__sub">¿Por qué es importante beber agua?</h3>
+            <p class="secc__info info__2">El agua es esencial para que tu cuerpo funcione correctamente. Mantenerte hidratado te ayuda a:</p>
+            <ul class="secc2__lista">
+                <li><strong>Mejora tu energía:</strong>El agua es clave para transportar nutrientes y oxígeno a las células, manteniéndote activo durante el día.</li>
+                <li><strong>Favorecer la digestión:</strong>Ayuda a descomponer los alimentos y a prevenir problemas como el estreñimiento.</li>
+                <li><strong>Eliminar toxinas:</strong>A través del sudor y la orina, el agua limpia tu cuerpo y mantiene tus órganos funcionando correctamente.</li>
+                <li><strong>Cuidar tu piel:</strong>La hidratación adecuada ayuda a que tu piel luzca saludable y radiante.</li>
+            </ul>
+        </div>
+        <div class="registro">
+            <!-- Formulario de registro de agua -->
+            <form class="registro__hidratacion" action="/registro" method="POST">
+                <h4 class="registro__titulo">Registro de hidratación</h4>
+                <div class="input-form">
+                    <label for="dia">Día</label>
+                    <input type="text" id="dia" name="dia" placeholder="Escribe el día" required>
+                </div>
+                <div class="input-form">
+                    <label for="vasos">Cantidad de vasos</label>
+                    <input type="number" id="vasos" name="vasos" required>
+                </div>
+                <div class="boton">
+                    <button class="boton2" type="submit">Registrar</button>
+                </div>
+            </form>
+
+            <!-- Mostrar los registros de agua -->
+            <div class="registro__lista">
+                <h4>Registro</h4>
+                <ul>
+                    <!-- Itera sobre los registros y muestra el día y la cantidad de vasos -->
+                    {% for item in registros %}
+                        <li>{{ item.dia }} - {{ item.vasos }} vasos</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="nota__info">No subestimes el poder de un vaso de agua. Beber suficiente agua todos los días es un hábito sencillo que mejora tu salud y bienestar. ¡Hazlo parte de tu rutina!</p>
+    </footer>
+</body>
+</html>

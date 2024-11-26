@@ -1,0 +1,294 @@
+/* ENCABEZADO */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #F1F1F1;
+  }
+  
+  .encabezado {
+    margin: 0;
+    padding: 0;
+    background-color: #FF6B6B;
+    color: #fff;
+  }
+  
+  .encabezado__title {
+    margin: 0;
+    padding: 30px 0 0 0;  
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    
+  }
+  
+  .encabezado__list {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .encabezado__item {
+    display: inline-block;
+    padding: 20px;
+    margin: 0 10px;
+  } 
+  
+  .encabezado__link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s; 
+  }
+  
+  .encabezado__link:hover {
+    color: #333;
+  }
+ 
+/*SECCIÓN DE INICIO*/  
+
+  .inicio {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(../images/fondo.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #fff; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    text-align: center; 
+  }
+  
+  .informacion__subtitulo {
+    font-size: 40px; 
+    margin-top: 200px;
+    margin-bottom: 20px; 
+  }
+  
+  .informacion__text {
+    font-size: 20px; 
+    margin-bottom: 30px; 
+  }
+  
+  .informacion__boton {
+    background-color: #FFD93D;
+    border: none;
+    padding: 15px 30px;
+    color: #333; 
+    font-size: 20px; 
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: 0.3s; 
+  }
+  
+  .inicio button:hover {
+    background-color: #FF6B6B; 
+    color: #fff; 
+  }
+
+
+/* SECCION - CALCULADORA */
+.calculadora {
+    margin: auto;
+}
+
+form {
+    margin: auto;
+    max-width: 500px;
+    margin-top: 50px;
+    margin-bottom: 10px; 
+    background-color: #138d75; 
+    border: 2px solid #138d75;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #0007;
+    color: #f2f3f4;
+    font-size: 16px;
+    width: 100%;
+}
+
+.titulo-imc {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+    color: #566573;
+}
+
+.input-form {
+    padding: 10px;
+    
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+}
+
+option {
+    background: #f2f3f4;
+    color: #138d75;
+}
+
+label {
+    line-height: 2;
+    font-size: 17px;
+}
+
+.boton {
+    text-align: center;
+}
+
+.boton2 {
+    padding: 10px 30px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    border-radius: 25px;
+    background-color: #a3e4d7;
+    color: #138d75;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    color: #fff9;
+}
+
+.boton2:hover {
+    background-color: #13987e;
+    color: #F1F1F1;
+}
+
+.informacion__link {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Para que tome el tamaño completo del botón */
+}
+
+/*INTERVALOS*/
+ .intervalos {
+    /*border: 2px solid #333; */
+    max-width: 100%;
+    margin: auto;
+ }
+
+ .intervalos__box {
+    text-align: center;
+    background-color: #FF6B6B;
+    width: 20%;
+    border-radius: 5px;
+    padding: 10px;
+    color: #F1F1F1;
+    display: inline-block;
+    margin: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 5px 0 #0007;  
+ }
+
+ .box--pesonormal {
+    background-color: #FFB84D;
+    right: 30px;
+ }
+
+ .box--sobrepeso {
+    background-color: #48c9b0;
+ }
+
+ .box--obesidad {
+    background-color: #138d75;
+ }
+
+
+/* SECCION DE CONSEJOS */
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    color: #566573;
+}
+
+.card {
+    background: #2980b9;
+    width: 400px;
+    box-sizing: border-box; 
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0 0 10px 0 #0007; 
+    margin-bottom: 20px;
+    display: inline-block;
+    margin: 40px;
+}
+
+.hidratacion {
+    margin-left: 80px;
+}
+
+.ejercicio {
+    background-color: #dc7633;
+}
+
+.sueño {
+    background: #bb8fce;
+}
+
+.subtitulo {
+    font-size: 25px;
+    margin: 0;
+    padding: 10px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.image {
+    padding: 10px;
+    width: 200px;
+    border-radius: 50%;
+    
+}
+
+.texto {
+    color: #fff;
+    text-align: justify;
+    font-size: 17px;
+    padding: 10px;
+}
+
+/*BOTON PARA IR A REGISTROS*/
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+}
+
+.color__boton {
+    background-color: #FF6B6B;
+}
+
+.contenedor-boton button:hover {
+    background-color: #FF6B6B;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(to right, #e74c3c, #FF6B6B); 
+    color: white;
+    padding: 25px 0; 
+    margin-top: 10px;
+    font-size: 20px;
+    border-top: 5px solid #c0392b;
+}
